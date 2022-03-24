@@ -19,7 +19,7 @@ device = torch.device("cuda" if use_cuda else "cpu")
 def parse_args():
     parser = argparse.ArgumentParser('Reinforcement Learning parser for DDPG')
 
-    parser.add_argument('--scenario', type=str, default='Pendulum-v0')
+    parser.add_argument('--scenario', type=str, default='simple_adversary')
     parser.add_argument('--eval', action='store_false')
 
     parser.add_argument('--load-episode-saved', type=int, default=50)
